@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Personal de Internet</title>
-    <link rel="stylesheet" href="Estilo.css">
+    <title>Mi Pagina Personal</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Mi Primer Sitio Web</h1>
+        <h1>Mi Primer Pagina Personal</h1>
         <nav>
-            <ul>
-                <li>
-                    <a href="intereses.html">Intereses</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+            <a class="boton" href="index.html">Inicio</a>
+            <a class="boton" href="intereses.html">Intereses</a>
+            <a class="boton" href="contacto.html">Contactos</a>
         </nav>
-
     </header>
-    <main>
-        <p>Me llamo Yanina. Soy estudiante de la materia de Desarollo Web</p>
-        <p>Tengo 25 años y curso mi segundo año en la licenciatura de Gestión de la Información</p>
-
+    <main class="contendor">
+        <section class="bloque">
+            <h2>Sobre mi</h2>
+            <img src="imagenP.jpg.png" alt="Imagen personal">
+            <p>Soy estudiante de la materia de Diseño y desarollo Web</p>
+            <p>Este en mi segundo año en la licenciatura en gestion de la informacion, en mi primer año, tuve introduccion a python por lo que me atrajo mas a esta nueva materia.</p>
+        </section>
+        <section class="bloque">
+            <h2>Mis objetivos son...</h2>
+            <p>Aprender a desarollar paginas web y mejorar mi logica de CSS y HTML.</p>
+        </section>
     </main>
-    <footer>
-        <p>Todos los derechos reservados</p>
-
-    </footer> 
+    <footer class="footer">
+        <p>Todos lo derechos reservados.</p>
+    </footer>
     
 </body>
 </html>

@@ -1,0 +1,104 @@
+/*cuerpo*/
+body {
+    margin: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #2a2a2a;
+
+
+}
+/* cabecera */
+header {
+    background-color: #87418b;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Menu*/
+nav {
+    display: flex;
+    gap: 40px;
+    margin-top: 25px;
+}
+/* Boton */
+.boton {
+    background-color: #b370b8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+/*puntero mouse*/
+.boton:hover {
+    background-color: #9a5aa0;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+/*marco*/
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.bloque {
+    text-align: center;
+    margin-bottom: 60px;
+}
+/*Titulos-sub-titulo*/
+h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(10, 10, 10);
+}
+
+h2 {
+    color: #7a3e80;
+    background-color: #d1a3d6;
+    border-radius: 10px;
+    display: inline-block;
+}
+/*datos personales*/
+.intereses {
+    display: flex;
+    align-items: center;
+    gap:20px ;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.intereses img {
+    width: 400px;
+    border-radius:10px ;
+    box-shadow: 0px 4px 10px rgba(0,0,0.2);
+    
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.datos {
+    background-color: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0.15);
+
+}
+/*Espacios*/
+section {
+    padding: 20px;
+}
+.footer {
+    background-color: #4e0d54;
+    color: rgb(221, 219, 217);
+    text-align: center;
+    padding: 20px;
+}
