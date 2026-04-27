@@ -1,104 +1,188 @@
-/*cuerpo*/
+/*cuerpo base*/
 body {
     margin: 0;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #2a2a2a;
+    font-family:"Dancing Script", cursive;
+    background-color: #a190f8;
+    line-height: 1.3;
+    color: #1a0033;
+    font-size: 22px;
 
 
 }
 /* cabecera */
 header {
-    background-color: #87418b;
-    color: white;
-    padding: 30px;
+    position: sticky;
+    top: 0;
     display: flex;
-    flex-direction: column;
+    z-index: 1000;
+    background-color: #4b0082;
+    color: white;
+    justify-content: space-around;
     align-items: center;
+    padding: 5px 20px;
 }
-/*Menu*/
+/*navegacion*/
 nav {
     display: flex;
-    gap: 40px;
-    margin-top: 25px;
+    gap: 15px;
+    margin: 0;
 }
 /* Boton */
 .boton {
-    background-color: #b370b8;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
+    background-color: #d4af37;
+    color: #1a0033;
+    padding: 6px 15px;
+    border-radius: 15px;
     text-decoration: none;
+    font-weight: bold;
     transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 
 }
 /*puntero mouse*/
 .boton:hover {
-    background-color: #9a5aa0;
+    background-color: #e9bb05;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
-/*marco*/
+/*contenedor*/
 .contenedor {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
 
 }
 .bloque {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+/*imagenes*/
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 10px;
 }
 /*Titulos-sub-titulo*/
 h1 {
     margin: 0;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 600;
     letter-spacing: 1px;
     text-shadow: 1px 1px 3px rgba(10, 10, 10);
 }
 
 h2 {
-    color: #7a3e80;
-    background-color: #d1a3d6;
+    color: #fbfbfb;
+    background-color: #3a0f3f;
     border-radius: 10px;
     display: inline-block;
+    padding: 5px 15px;
+    font-size: 28px;
+}
+/*parrafos*/
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1a0033;
+    font-weight: 400;
 }
 /*datos personales*/
 .intereses {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap:20px ;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30px;
+    padding: 25px;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
 .intereses img {
-    width: 400px;
+    width: 300px;
+    height: auto;
     border-radius:10px ;
+    flex-shrink: 0;
     box-shadow: 0px 4px 10px rgba(0,0,0.2);
     
+}
+.texto-intereses {
+    padding-left:30px ;
+    text-align: left;
+    flex: 1;
 }
 .contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    gap: 20px;
 }
 .datos {
-    background-color: white;
-    padding: 15px;
+    background-color: #f8f4ff;
+    border-left: 8px solid #d4af37;
+    padding: 20px;
     margin: 10px auto;
-    width: 300px;
+    width: 80%;
+    max-width: 400px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0,0,0.15);
+    transition: transform 0.3s ease;
 
+}
+.datos i {
+    color: #4b0082;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.datos h3 {
+    font-family: 'Dancing Script',cursive;
+    margin: 5px 0;
 }
 /*Espacios*/
 section {
     padding: 20px;
 }
+/* pie de pagina*/
 .footer {
-    background-color: #4e0d54;
-    color: rgb(221, 219, 217);
+    background-color: #4b0082;
+    color: white;
     text-align: center;
-    padding: 20px;
+    margin-top: 50px;
+}
+/*movil*/
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .boton {
+        width: auto;
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .intereses {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    .intereses img {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+    .texto-intereses {
+        padding-left: 0;
+    }
 }
